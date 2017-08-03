@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Make Up Finder</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src='https://code.jquery.com/jquery-2.1.3.min.js'></script>
+    <link href="https://fonts.googleapis.com/css?family=Gruppo|Open+Sans+Condensed:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <style type="text/css">
+	    .jumbotron {
+	    	background-color: #fc8383;
+	    	font-family: 'Gruppo', cursive;
+		    margin-bottom: 0px;
+		    background-size: cover;
+		    font-style: bold;
+		    text-align: center;
+		}	
+		body{
+			font-family: 'Gruppo', cursive;
+			font-size: 20px;
+		}
+		#results{
+		    font-family: 'Montserrat', sans-serif;
+		    font-size: 18px;
+		    border: #cdcdcd medium solid;
+		    border-radius: 0px;
+		    height:300px;
+		    text-align: center;
+		}
+		.product{
+			padding-top: 25px;
+		}
+    </style>
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="jumbotron">
+			<h1 id="title">Make Up Finder</h1>
+		</div>
+	</div>
+<div class="container">
+  	<div class="row">
+  		<div class="col-md-6 offset-md-4">
+  		<div class="form-group">
+			<form id="makeup-form" class="col-md-8">
+				<label id="label" for="brand-input">What brand are you looking for:</label>
+				<input type="text" id="brand-input"><br>
+				<br>
+<!-- 				<button id="addBrand" type="button" class="btn btn-primary">Submit</button> -->
+			</form>
+		</div>
+		</div>
+	</div>
+</div>
+<div class="container">
+  	<div class="row">
+  		<div class="col-md-6 offset-md-4">
+  		<div class="form-group">
+			<form id="makeup-form" class="col-md-8">
+				<label id="label" for="product-input">What product are you looking for:</label>
+				<input type="text" id="product-input"><br>
+				<br>
+				<button id="addProduct" type="button" class="btn btn-inverse">Submit</button>
+			</form>
+		</div>
+		</div>
+	</div>
+</div>
+<br>
+<div class="container">
+	<div id="products"></div>
+</div>
+<script type="text/javascript" src="mkup.js"></script>
+</body>
+</html>
