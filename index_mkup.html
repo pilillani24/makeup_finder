@@ -10,29 +10,41 @@
     <script src='https://code.jquery.com/jquery-2.1.3.min.js'></script>
     <link href="https://fonts.googleapis.com/css?family=Gruppo|Open+Sans+Condensed:300" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <style type="text/css">
 	    .jumbotron {
-	    	background-color: #fc8383;
+	    	background-color: black;
 	    	font-family: 'Gruppo', cursive;
 		    margin-bottom: 0px;
 		    background-size: cover;
 		    font-style: bold;
 		    text-align: center;
+		    color: white;
 		}	
 		body{
 			font-family: 'Gruppo', cursive;
-			font-size: 20px;
+			font-size: 18px;
 		}
+
 		#results{
 		    font-family: 'Montserrat', sans-serif;
 		    font-size: 18px;
-		    border: #cdcdcd medium solid;
+/*		    border: #cdcdcd medium solid;
 		    border-radius: 0px;
-		    height:300px;
+		    height:300px;*/
 		    text-align: center;
 		}
 		.product{
 			padding-top: 25px;
+		}
+		#product-name{
+			padding-top: 20px;
+			color: black;
+			font-size: 14px;
+		}
+		p{
+			font-style: bold;
+
 		}
     </style>
 </head>
@@ -42,6 +54,8 @@
 			<h1 id="title">Make Up Finder</h1>
 		</div>
 	</div>
+<!-- Sidebar -->
+<!-- <div class="w3-sidebar w3-light-grey w3-bar-block" style="width:25%"> -->
 <div class="container">
   	<div class="row">
   		<div class="col-md-6 offset-md-4">
@@ -50,7 +64,7 @@
 				<label id="label" for="brand-input">What brand are you looking for:</label>
 				<input type="text" id="brand-input"><br>
 				<br>
-<!-- 				<button id="addBrand" type="button" class="btn btn-primary">Submit</button> -->
+
 			</form>
 		</div>
 		</div>
@@ -70,10 +84,14 @@
 		</div>
 	</div>
 </div>
+<!-- </div> -->
 <br>
-<div class="container">
-	<div id="products"></div>
-</div>
+<!-- Page Content -->
+<!-- <div style="margin-left:25%"> -->
+	<div class="container">
+		<div id="products"></div>
+	</div>
+<!-- </div> -->
 <script type="text/javascript" src="mkup.js"></script>
 </body>
 </html>

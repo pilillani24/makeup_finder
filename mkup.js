@@ -36,8 +36,8 @@ function displayMakeUpfo() {
 			productImage.addClass("product");
 			productImage.attr("href",webLink);
 
-			productDiv.append(pName);
 			productDiv.append(productImage);
+			productDiv.append(pName);
 			productDiv.append(p);
 			
 			$("#products").prepend(productDiv);
